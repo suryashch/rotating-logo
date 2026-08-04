@@ -230,7 +230,7 @@ animate();
 function animate() {
     requestAnimationFrame(animate);
     controls.update();
-    camera.position.lerp(targetPosition, 0.035);
+    camera.position.lerp(targetPosition, 0.045);
     // Check if we are close enough to just snap into place
     if (camera.position.distanceToSquared(targetPosition) < 0.05) {
         camera.position.copy(targetPosition);
@@ -240,7 +240,7 @@ function animate() {
 
     currentFrame++;
 
-    const lightness = Math.max(0.5, Math.sin(currentFrame * 0.010));
+    const lightness = Math.max(0.5, Math.sin(currentFrame * 0.030));
     line_accent.material.color.setHSL(0.055, 1, lightness);
     cuboidMesh.material.color.setHSL(0.055, 1, lightness);
     
