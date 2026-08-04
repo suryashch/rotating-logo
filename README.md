@@ -1,0 +1,1 @@
+![Logo](public/logo-hires.gif)
