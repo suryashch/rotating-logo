@@ -34,7 +34,6 @@ function moveCamera( presetName ) {
 }
 
 const controls = new OrbitControls( camera, renderer.domElement );
-controls.enablePan = true;
 controls.minDistance=0.1;
 controls.maxDistance=150;
 controls.minPolarAngle=0;
